@@ -22,9 +22,8 @@ public class BookService {
         this.authorRepository = authorRepository;
     }
 
-    @GraphQLQuery
     public Author author(Book book) {
-        return authorRepository.findById(book.getAuthorId());
+        return authorRepository.findById(book.getAuthor().getId());
     }
 
     @GraphQLQuery

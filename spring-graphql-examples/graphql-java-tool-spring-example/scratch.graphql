@@ -1,0 +1,13 @@
+{
+    books {
+        id
+        name
+        author {
+            name
+        }
+    }
+}
+
+{
+    add(additionInput: {first: 1, second: 2})
+}

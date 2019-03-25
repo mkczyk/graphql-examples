@@ -1,0 +1,25 @@
+# This file was generated based on ".graphqlconfig" at Tue Mar 26 00:13:13 CET 2019. Do not edit manually.
+
+schema {
+    query: Query
+}
+
+type Author {
+    id: Int!
+    name: String
+}
+
+type Book {
+    author: Author
+    id: Int!
+    name: String
+}
+
+"Query root"
+type Query {
+    books: [Book]
+}
+
+
+"Unrepresentable type"
+scalar UNREPRESENTABLE
