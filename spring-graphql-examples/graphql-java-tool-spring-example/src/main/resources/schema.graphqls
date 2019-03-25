@@ -1,0 +1,20 @@
+type Query {
+    books: [Book!]
+    add(additionInput: AdditionInput): Int
+}
+
+input AdditionInput {
+    first: Int
+    second: Int
+}
+
+type Book {
+    id: Int!
+    name: String!
+    author: Author!
+}
+
+type Author {
+    id: Int!
+    name: String!
+}
