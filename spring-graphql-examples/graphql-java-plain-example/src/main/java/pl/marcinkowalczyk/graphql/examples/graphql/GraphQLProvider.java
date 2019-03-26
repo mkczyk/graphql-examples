@@ -27,7 +27,7 @@ public class GraphQLProvider {
     private GraphQL graphQL;
 
     @Bean
-    public GraphQL graphQL() { 
+    public GraphQL graphQL() {
         return graphQL;
     }
 
@@ -56,4 +56,5 @@ public class GraphQLProvider {
                         .dataFetcher("pageCount", graphQLDataFetchers.getPageCountDataFetcher()))
                 .build();
     }
+
 }

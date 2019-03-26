@@ -8,5 +8,11 @@
     <artifactId>spring-graphql-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>graphql-java-plain-example</module>
+        <module>graphql-java-spring-example</module>
+        <module>graphql-java-tool-spring-example</module>
+        <module>graphql-spqr-spring-example</module>
+    </modules>
 
 </project>
