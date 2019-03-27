@@ -1,0 +1,24 @@
+
+GET http://localhost:7300/books
+
+###
+
+
+GET http://localhost:7300/books/1
+
+###
+
+POST http://localhost:7300/books
+Content-Type: application/json
+
+{
+  "name": "New Book",
+  "authorId": 2
+}
+
+###
+
+
+GET http://localhost:7300/books/with-authors
+
+###

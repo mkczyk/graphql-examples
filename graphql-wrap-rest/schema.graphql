@@ -1,0 +1,40 @@
+# This file was generated based on ".graphqlconfig" at Wed Mar 27 02:38:26 CET 2019. Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Author {
+    id: Int!
+    name: String
+}
+
+type Book {
+    author: Author
+    id: Int!
+    name: String
+}
+
+"Mutation root"
+type Mutation {
+    "Add book with name and author id"
+    addBook(book: BookDtoRequestInput): Book
+}
+
+"Query root"
+type Query {
+    "Get all books with data"
+    allBooks: [Book]
+    "Get book by specific id"
+    bookById(bookId: Int!): Book
+}
+
+input BookDtoRequestInput {
+    authorId: Int!
+    name: String
+}
+
+
+"Unrepresentable type"
+scalar UNREPRESENTABLE
